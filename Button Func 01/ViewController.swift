@@ -15,8 +15,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.s
         
         view.backgroundColor=UIColor.blue;
+        
+        
     }
-
+    @IBAction func butto(_ sender: Any) {
+        if(r.text=="aa")
+        {
+            r.text="bb"; view.backgroundColor=UIColor.black;
+        }
+        else
+        {
+            view.backgroundColor=UIColor.yellow;
+            r.text="aa"
+        }
+    }
+    @IBOutlet weak var r: UILabel!
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
